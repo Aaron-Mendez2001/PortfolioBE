@@ -17,7 +17,16 @@ exports.up = async function(knex) {
             .inTable('skills')
             .onDelete('SET NULL')
             .onUpdate('CASCADE')
-
+        table.text('skills_2')
+            .references('id')
+            .inTable('skills')
+            .onDelete('SET NULL')
+            .onUpdate('CASCADE')
+        table.text('skills_3')
+            .references('id')
+            .inTable('skills')
+            .onDelete('SET NULL')
+            .onUpdate('CASCADE')
   })
 };
 
