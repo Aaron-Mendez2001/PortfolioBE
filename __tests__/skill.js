@@ -23,4 +23,10 @@ describe('Testing skills endpoints', () => {
         expect(res.type).toBe('application/json')
         expect(res.body.message).toBe('Invalid ID')
     })
+    it('GETs skill by id', async () => {
+        const res = await request(server).get('/skills/1')
+        expect(res.statusCode).toBe(200)
+        expect(res.type).toBe('application/json')
+        expect(res.body.name).toBe('Node')
+    })
 })
