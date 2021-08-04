@@ -17,4 +17,10 @@ describe('Testing experience endpoints', () => {
         expect(res.type).toBe('application/json')
         expect(res.body.length).toBe(5)
     })
+    it('Triggers GET by id error', async () => {
+        const res = await request(server).get('/experience/15')
+        expect(res.statusCode).toBe(400)
+        expect(res.type).toBe('application/json')
+        expect(res.body.message).toBe('Invalid ID')
+    })
 })
