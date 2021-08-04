@@ -36,5 +36,10 @@ exports.seed = async function(knex) {
       education: 'Lambda School Nov. 2019 - March 2021',
       description: 'No one will buy an ugly house, nor do I expect anyone to accept an ill-designed site. With whimsical as my means for framing my designs, I use LESS and various javascript styling libraries and tools to present functional yet stylish websites.'
     },
+    {
+      name: 'HTML5',
+      education: 'Lambda School Nov. 2019 - March 2021',
+      description: 'The basic building blocks of every web page, I am well versed in accesibility requirements and principles to make my projects available to all'
+    }
   ])
 };
