@@ -16,7 +16,7 @@ router.get('/:id', async (req, res, next) => {
 
         const getExps = await Exp.getExpById(req.params.id);
         
-        if(!getSkill){
+        if(!getExps){
             return res.status(400).json({
                 message: 'Invalid ID'
             })

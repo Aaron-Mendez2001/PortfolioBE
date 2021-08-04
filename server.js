@@ -10,8 +10,8 @@ require('dotenv').config();
 const server = express();
 
 server.use(express.json());
-server.use(helmet);
-server.use(cors);
+server.use(helmet());
+server.use(cors());
 server.use(homeRouter);
 server.use('/skills', skillsRouter)
 server.use('/experience', expRouter);
