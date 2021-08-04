@@ -17,4 +17,10 @@ describe('Testing skills endpoints', () => {
         expect(res.type).toBe('application/json')
         expect(res.body.length).toBe(8)
     })
+    it('Triggers GET by id error', async () => {
+        const res = await request(server).get('/skills/15')
+        expect(res.statusCode).toBe(400)
+        expect(res.type).toBe('application/json')
+        expect(res.body.message).toBe('Invalid ID')
+    })
 })
