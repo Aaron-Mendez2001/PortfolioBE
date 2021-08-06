@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Aaron-Mendez2001/PortfolioBE#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "helmet": "^4.6.0",
     "knex": "^0.95.8",
@@ -30,7 +31,6 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "dotenv": "^10.0.0",
     "jest": "^27.0.6",
     "nodemon": "^2.0.12",
     "supertest": "^6.1.4"
