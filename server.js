@@ -5,8 +5,6 @@ const homeRouter = require('./home/home-router');
 const skillsRouter = require('./skills/skills-router');
 const expRouter = require('./experience/experience-router');
 
-require('dotenv').config();
-
 const server = express();
 
 server.use(express.json());
